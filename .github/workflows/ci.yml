@@ -20,6 +20,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: app/package-lock.json
 
+      - run: node -v
       - run: npm ci
       - run: npm run build
 
@@ -36,6 +37,6 @@ jobs:
           node-version: '26'
           cache: 'npm'
           cache-dependency-path: docs/package-lock.json
-
+      - run: node -v
       - run: npm ci
       - run: npm run build
